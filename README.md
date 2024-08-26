@@ -11,4 +11,4 @@ Features:
 - Removed: Rounded corners when in compact mode.
 - Removed: Border for search bar when not in focus.
 
-![Preview]([image.png](https://i.ibb.co/9YVn1qd/image.png))
+![Preview](https://i.ibb.co/9YVn1qd/image.png)

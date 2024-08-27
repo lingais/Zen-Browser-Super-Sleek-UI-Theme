@@ -1,7 +1,15 @@
 /* Remove border from the URL bar when not focused */
 #urlbar:not([focused]) {
   border: none !important;
+  /* add light grey shade to urlbar in light mode */
+  @media (prefers-color-scheme: light) {
+    #urlbar-background{
+      background-color: #e8ecf1 !important;
+    }
+  }
 }
+
+
 
 /* Popout url bar with background blur */
 #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {

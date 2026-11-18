@@ -17,20 +17,10 @@
   z-index: 2;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5) !important; /* Add this line for the drop shadow */
 }
-#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]):after {
-  content: "";
-  position: fixed;
-  pointer-events: none;
 
-  width: 100vw;
-  height: 100vh;
-
-  top: 0;
-  left: 0;
-
-  backdrop-filter: blur(2px);
-
-  z-index: -1;
+/* Apply background blur to the page container */
+:root:has(#urlbar[open][zen-floating-urlbar="true"]) #tabbrowser-tabpanels {
+  filter: blur(2px) !important;
 }
 
 /* set navbar height to super compact density */
